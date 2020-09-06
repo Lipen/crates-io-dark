@@ -1,27 +1,34 @@
 /* ==UserStyle==
 @name           crates-io-dark
-@namespace      JonathanHelianthicusDoe
-@version        0.4.1
-@description    Dark theme for crates.io
+@namespace      Lipen
+@version        0.5.0
+@description    Dark theme for `crates.io`. Fork of 'https://github.com/JonathanHelianthicusDoe/crates-io-dark'. 
 @license        CC-BY-SA-4.0
-@author         Dr. Jonathan Helianthicus Doe, IV
-@homepageURL    https://github.com/JonathanHelianthicusDoe/crates-io-dark
-@updateURL      https://github.com/JonathanHelianthicusDoe/crates-io-dark/raw/master/crates-io-dark.user.css
+@author         Konstantin Chukharev (original author: Dr. Jonathan Helianthicus Doe, IV)
+@homepageURL    https://github.com/Lipen/crates-io-dark
+@updateURL      https://github.com/Lipen/crates-io-dark/raw/master/crates-io-dark.user.css
 ==/UserStyle== */
 @-moz-document domain("crates.io") {
+    :root {
+        --main-bg: #333;
+        --main-bg-dark: #222;
+        --main-bg-light: #555;
+        --main-color: #090;
+        --main-color-light: #999;
+        --link-color: #0A2;
+        --link-hover-color: #072;
+        --gray-border: var(--main-color-light);
+        --footer-bg-color: var(--main-bg-dark);
+    }
+    
     html {
-        background-color: #222;
+        background-color: var(--main-bg-dark);
     }
 
     #header input.search,
     #mobile-search input.search {
         background-color: #111 !important;
         color: #eee !important;
-    }
-
-    div[class^='_header_'],
-    div[class*=' _header_'] {
-        background-color: #222 !important;
     }
 
     input[class^='_search_'],
@@ -40,8 +47,8 @@
     main {
         box-shadow: none !important;
         border: none !important;
-        background-color: #111 !important;
-        color: #eee !important;
+/*         background-color: #111 !important; */
+/*         color: #eee !important; */
     }
 
     div[class^='_title-header'],
@@ -297,5 +304,53 @@
     #selection a:hover,
     #selection a.active {
         background-color: #333;
+    }
+    
+    div[class^='_list_'],
+    div[class*=' _list_'] {
+        background-color: var(--main-bg-dark);
+    }
+    
+    div[class^='_dropdown_'] ul[class^='_list_'],
+    div[class*=' _dropdown_'] ul[class*=' _list_'] {
+        background-color: var(--main-bg-dark);
+        border: 1px solid var(--gray-border);
+    }
+    
+    dl[class^='_list_'],
+    dl[class*=' _list_'] {
+        background-color: var(--main-bg-dark);
+    }
+    
+    a[class^='_name_'],
+    a[class*=' _name_'] {
+        color: var(--link-color);
+    }
+    
+    a[class^='_link_'],
+    a[class*=' _link_'] {
+        color: var(--link-color);
+    }
+    
+    a[class^='_link_']:hover,
+    a[class*=' _link_']:hover {
+        background-color: var(--main-bg-light);
+    }
+    
+    div[class^='_downloads_'] svg circle,
+    div[class*=' _downloads_'] svg circle,
+    div[class^='_recent-downloads_'] svg circle,
+    div[class*=' _recent-downloads_'] svg circle {
+        fill: transparent;
+    }
+    
+    div[class^='_copy-button_'],
+    div[class*=' _copy-button_'] svg path {
+        fill: var(--main-color);
+    }
+    
+    div[class^='_selection_'],
+    div[class*=' _selection_'] {
+        background-color: var(--main-bg-dark);
     }
 }
