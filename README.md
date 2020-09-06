@@ -1,15 +1,10 @@
 # crates-io-dark
 
-A smol dark theme for [crates.io](https://crates.io/).
-
-## Important Note
-
-This is a fork of [JonathanHelianthicusDoe/crates-io-dark][https://github.com/JonathanHelianthicusDoe/crates-io-dark].
+Dark theme for [crates.io](https://crates.io/).
 
 ## Install
 
-Install [Stylus](https://addons.mozilla.org/firefox/addon/styl-us/) and then
-use Stylus to install [the crates-io-dark usercss][usercss].
+Install [Stylus](https://github.com/stylus/stylus) and then use Stylus to install [the crates-io-dark usercss][usercss]: [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)][usercss-raw].
 
 ## Screenshots
 
@@ -38,4 +33,5 @@ the [LICENSE](./LICENSE) file for a plaintext version.
 "CC BY-SA 4.0+")](https://creativecommons.org/licenses/by-sa/4.0/)
 
 [usercss]: crates-io-dark.user.css
+[usercss-raw]: https://raw.githubusercontent.com/Lipen/crates-io-dark/master/crates-io-dark.user.css
 [CC BY-SA 4.0]: https://creativecommons.org/licenses/by-sa/4.0/legalcode
