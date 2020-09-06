@@ -2,9 +2,7 @@
 
 Dark theme for [crates.io](https://crates.io/).
 
-## Install
-
-Install [Stylus](https://github.com/stylus/stylus) and then use Stylus to install [the crates-io-dark usercss][usercss]: [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)][usercss-raw].
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)][usercss-raw]
 
 ## Screenshots
 
