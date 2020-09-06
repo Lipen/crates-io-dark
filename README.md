@@ -4,10 +4,7 @@ A smol dark theme for [crates.io](https://crates.io/).
 
 ## Important Note
 
-**NOTE:** crates.io now mangles class/id names, which unfortunately sort of
-thwarts the ability to apply a usercss. Until [my PR to the crates.io
-repo](https://github.com/rust-lang/crates.io/pull/2076) gets merged, I will try
-to keep this usercss working but I cannot give any guarantees.
+This is a fork of [JonathanHelianthicusDoe/crates-io-dark][https://github.com/JonathanHelianthicusDoe/crates-io-dark].
 
 ## Install
 
@@ -17,15 +14,15 @@ use Stylus to install [the crates-io-dark usercss][usercss].
 ## Screenshots
 
 <details>
-  <summary>Screenshot of crates&#x2e;io front page</summary>
+  <summary>Screenshot of crates.io front page</summary>
 
-  ![Screenshot of crates.io front page](./crates-io-dark-0.png)
+  ![Screenshot of crates.io front page](screenshots/main-page.png)
 </details>
 
 <details>
-  <summary>Screenshot of crates&#x2e;io/crates/rand</summary>
+  <summary>Screenshot of crates.io/crates/rand</summary>
 
-  ![Screenshot of crates.io/crates/rand](./crates-io-dark-1.png)
+  ![Screenshot of crates.io/crates/rand](screenshots/rand-crate.png)
 </details>
 
 ## Legal
@@ -40,5 +37,5 @@ the [LICENSE](./LICENSE) file for a plaintext version.
 [![CC BY-SA 4.0+](https://i.creativecommons.org/l/by-sa/4.0/88x31.png
 "CC BY-SA 4.0+")](https://creativecommons.org/licenses/by-sa/4.0/)
 
-[usercss]: https://github.com/JonathanHelianthicusDoe/crates-io-dark/raw/master/crates-io-dark.user.css
+[usercss]: crates-io-dark.user.css
 [CC BY-SA 4.0]: https://creativecommons.org/licenses/by-sa/4.0/legalcode
